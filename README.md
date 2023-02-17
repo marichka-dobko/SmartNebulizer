@@ -14,6 +14,10 @@ Micromlgen  - Python [library](https://eloquentarduino.com/libraries/micromlgen/
 
 [Tutorial](https://docs.arduino.cc/tutorials/nano-33-ble-sense/microphone-sensor) on reading data from in-built PDM microphone.
 
+[Tutorial](https://docs.arduino.cc/tutorials/nano-33-ble-sense/get-started-with-machine-learning) on how to train deploy models to run on Arduino.
+
+LSTM training and prediction from sensors data (model runs on PC) [example](https://github.com/256ericpan/LSTM_IoT).
+
 Air Velocity Sensor [library](https://github.com/sparkfun/SparkFun_FS3000_Arduino_Library). 
 
 ## Datasets
