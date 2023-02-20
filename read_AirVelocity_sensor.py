@@ -1,15 +1,13 @@
 import serial
 import time
-import numpy as np
 import pandas as pd
 
 # set up the serial line
 ser = serial.Serial('/dev/cu.usbmodem14101', 115200, timeout=1)
-# time.sleep(2)
 
 # Read and record the data
 data = []  # empty list to store the data
-for i in range(1000):
+for i in range(200):
     b = ser.readline()  # read a byte string
     string_n = b.decode()  # decode byte string into Unicode
     string = string_n.rstrip()  # remove \n and \r
@@ -26,5 +24,5 @@ data_dict = {
     'raw': data_raw,
     'meters': data_meters
 }
-# np.savetxt('data/airvelocity_sensor.csv', data, delimiter=',', header='sensor_value')
-pd.DataFrame.from_dict(data_dict).to_csv('data/airvelocity_sensor.csv', index=False)
+df = pd.DataFrame.from_dict(data_dict)
+df.to_csv('data/airvelocity_sensor.csv', index=False)
