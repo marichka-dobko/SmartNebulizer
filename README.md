@@ -1,5 +1,8 @@
-# SmartNebulizer
-Cornell Hackathon February 2023
+# AiroCare - smart nebulizer
+AiroCare is a smart standalone device that expands the abilities of medical equipment to capture and analize asthma activity.
+
+Cornell Health Hackathon February 2023. Grand Prize winner
+[Youtube video](https://www.youtube.com/watch?v=ASEi8pnSnYM)
 
 
 ## Resources
